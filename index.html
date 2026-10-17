@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/surfur-logo.jpeg" />
+    <link rel="shortcut icon" type="image/jpeg" href="/surfur-logo.jpeg" />
+    <link rel="apple-touch-icon" href="/surfur-logo.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SurFur — Surf for Paws, Find Your Furever Home</title>
+    <meta name="description" content="SurFur connects compassionate adopters with verified animal shelters, rescue groups, and stray animals in the Philippines." />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('surfur_theme');
+          if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
